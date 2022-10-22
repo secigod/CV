@@ -9,16 +9,15 @@ function main () {
 				left: '0'
 			});
 			contador = 0;
-		} else {
+		} 
+		$('.submenu').click(function(){
 			contador = 1;
 			$('nav').animate({
 				left: '-100%'
 			});
-		}
+		});
 	});
 
 	// Mostramos y ocultamos submenus
-	$('.submenu').click(function(){
-		$(this).children('.children').slideToggle();
-	});
+	
 }
